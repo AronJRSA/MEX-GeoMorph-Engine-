@@ -37,15 +37,13 @@
 ## Visual Results / Resultados Visuales
 
 ### 1. Interactive 3D Terrain / Modelo 3D Interactivo
-> ![3D Model](3d.png) 
+> ![3D Model](Imagenes_MEX-GeoMorph-Engine/3d.png)
 
-### 2. Contour Map / Mapa de Curvas de Nivel
-> ![Contour Map](Zaragoza_Curvas_Nivel.png)
+### 2. Monte Carlo Spatial Validation / Validación Espacial Monte Carlo
+> ![Monte Carlo](Imagenes_MEX-GeoMorph-Engine/Simulacion_Montecarlo_vist_kml.png)
 
-### 2. Contour Map / Simulacion Montecarlo
-> ![Contour Map](Simulacion_Montecarlo_vist_kml.png)
-
----
+### 3. Contour Map / Mapa de Curvas de Nivel
+> ![Contour Map](Imagenes_MEX-GeoMorph-Engine/Zaragoza_Curvas_Nivel.png)
 
 ## Stack & Structure
 
