@@ -51,15 +51,16 @@
 * **GIS:** `GeoPandas`, `Shapely`, `PyProj`.
 * **Data Science:** `Pandas`, `NumPy`, `SciPy` (RBF Interpolation).
 * **Visualization:** `Matplotlib`, `Plotly`, `Folium`.
-
+### Project Structure
+```text
 ├── config/
-│   └── settings.py      # Global parameters & ID selection / Parámetros globales
+│   └── settings.py      # Parámetros globales e ID selection
 ├── data/
-│   ├── raw/             # Input (SHP, KML, TXT) / Insumos originales
-│   └── output/          # Generated results / Resultados generados
+│   ├── raw/             # Insumos originales (SHP, KML, TXT)
+│   └── output/          # Resultados generados
 ├── modules/
-│   ├── ingestion.py     # Data cleaning & SHP processing / Limpieza de datos
-│   ├── modeling.py      # Monte Carlo & Interpolation / Lógica de modelado
-│   └── visualization.py # 3D & Contour generation / Generación de visuales
-├── main.py              # Master execution script / Script principal de ejecución
-└── README.md            # Documentation / Documentación
+│   ├── ingestion.py     # Limpieza de datos y SHP processing
+│   ├── modeling.py      # Lógica de Monte Carlo e Interpolación
+│   └── visualization.py # Generación de visuales 3D y Contornos
+├── main.py              # Script principal de ejecución
+└── README.md            # Documentación
