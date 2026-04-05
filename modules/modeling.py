@@ -3,9 +3,7 @@ import numpy as np
 from scipy.interpolate import griddata
 
 def generar_malla_municipal(x, y, z, municipio_poly):
-    """
-    Copia exacta de tu lógica 'Sin Derretir'.
-    """
+
     # 1. Extraer límites del municipio para la malla
     min_lon, min_lat, max_lon, max_lat = municipio_poly.bounds
     res = 300 # El GRID_RES que tenías
@@ -25,9 +23,7 @@ def generar_malla_municipal(x, y, z, municipio_poly):
     return grid_x, grid_y, grid_z
 
 def proyectar_contorno_a_relieve(municipio_poly, x, y, z):
-    """
-    Copia exacta de tu proyección de borde azul.
-    """
+
     if hasattr(municipio_poly, 'exterior'):
         coords_borde = list(municipio_poly.exterior.coords)
     else:
