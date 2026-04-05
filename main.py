@@ -10,8 +10,6 @@ from modules.modeling import generar_malla_municipal, proyectar_contorno_a_relie
 from modules.visualization import exportar_3d_interactivo, exportar_curvas_nivel
 
 def generar_kml_simulacion(municipio_poly, ruta_salida):
-    """Genera una nube de puntos aleatorios dentro del municipio para procesar en la web."""
-
     kml = simplekml.Kml()
     min_x, min_y, max_x, max_y = municipio_poly.bounds
     
@@ -55,11 +53,10 @@ def runner():
 
         sys.exit()
 
-    # 3. Iniciar Modelado (Solo si el TXT ya existe)
+    # 3. Iniciar Modelado solo si el TXT ya existe
 
     x, y, z = cargar_puntos_txt(ruta_txt)
 
-    # Procesamiento con tu lógica 'Sin Derretir'
     grid_data = generar_malla_municipal(x, y, z, municipio_poly)
     lon_b, lat_b, z_borde = proyectar_contorno_a_relieve(municipio_poly, x, y, z)
 
