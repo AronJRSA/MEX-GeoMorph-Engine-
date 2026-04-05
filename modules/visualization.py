@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sys
 import os
-# Importamos ambos diccionarios
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config.settings import MODEL_CONFIG, MUNICIPIO_CONFIG
 
@@ -32,7 +32,6 @@ def exportar_3d_interactivo(grid_data, lon_b, lat_b, z_borde, ruta_salida):
     ))
 
     # 3. Configuración de la Escena
-    # CAMBIO AQUÍ: Usamos MUNICIPIO_CONFIG para el nombre
     nombre_mun = MUNICIPIO_CONFIG.get('nombre', 'San Luis Potosí')
     
     fig.update_layout(
@@ -74,8 +73,6 @@ def exportar_curvas_nivel(grid_data, municipio_poly, ruta_salida):
 
     # 3. Etiquetas de altitud
     ax.clabel(contorno, inline=True, fontsize=8, fmt='%1.0f', colors='black')
-
-    # CAMBIO AQUÍ: Usamos MUNICIPIO_CONFIG para el nombre
     nombre_mun = MUNICIPIO_CONFIG.get('nombre', 'Zaragoza')
     ax.set_title(f"Mapa Topográfico: {nombre_mun}", fontsize=15)
     
