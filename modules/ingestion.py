@@ -8,10 +8,6 @@ import os
 os.environ['SHAPE_RESTORE_SHX'] = 'YES'
 
 def cargar_puntos_txt(ruta_archivo):
-    """
-    Lee los puntos de elevación desde un archivo TXT.
-    Limpia los nombres de las columnas para evitar errores de espacios.
-    """
     try:
         df = pd.read_csv(ruta_archivo, sep=None, engine='python')
         # Limpieza de espacios en blanco en los encabezados
@@ -26,10 +22,7 @@ def cargar_puntos_txt(ruta_archivo):
         return None, None, None
 
 def cargar_geometria_municipio(ruta_shp, indice_municipio=28):
-    """
-    Carga el Shapefile del INEGI y lo proyecta a coordenadas globales (WGS84).
-   
-    """
+
     try:
         gdf = gpd.read_file(ruta_shp)
         
@@ -48,10 +41,7 @@ def cargar_geometria_municipio(ruta_shp, indice_municipio=28):
         return None
 
 def extraer_vertices_kml(ruta_kml):
-    """
-    Extrae las coordenadas de un archivo KML para definir áreas de interés.
-   
-    """
+
     try:
         tree = ET.parse(ruta_kml)
         root = tree.getroot()
