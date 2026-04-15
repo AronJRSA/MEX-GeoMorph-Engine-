@@ -1,4 +1,5 @@
-# MEX-GeoMorph-Engine 
+# MEX-GeoMorph-Engine
+#  
 ### **Automated Topographic Modeling & 3D Visualization Pipeline**
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
@@ -25,7 +26,7 @@
 
 ## Descripción en Español
 
-**MEX-GeoMorph-Engine** es un pipeline de ingeniería de datos diseñado para transformar vectores del **Marco Geoestadístico del INEGI** y conjuntos de datos topográficos en modelos 3D de alta precisión y cartografía técnica interactiva.
+**MEX-GeoMorph-Engine** es un pipeline de ingeniería de datos diseñado para transformar vectores del **Marco Geoestadístico del INEGI** y conjuntos de datos topográficos en modelos 3D de alta precisión y cartografía técnica interactiva, permite conocer la topografía de cualquier municipio de México, a través de curvas de nivel y modelado 3E.
 
 ### Escalabilidad Nacional y Arquitectura
 * **Alcance Federal:** Compatible con la estructura de datos oficial de la República Mexicana. Basta con vincular el dataset de cualquier estado o municipio para procesar su topografía de forma automática.
