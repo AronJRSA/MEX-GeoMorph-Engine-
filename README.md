@@ -46,22 +46,3 @@
 ### 3. Contour Map / Mapa de Curvas de Nivel
 > ![Contour Map](Imagenes_MEX-GeoMorph-Engine/Zaragoza_Curvas_Nivel.png)
 
-## Stack & Structure
-
-* **Language:** `Python 3.x`
-* **GIS:** `GeoPandas`, `Shapely`, `PyProj`.
-* **Data Science:** `Pandas`, `NumPy`, `SciPy` (RBF Interpolation).
-* **Visualization:** `Matplotlib`, `Plotly`, `Folium`.
-### Project Structure
-```text
-├── config/
-│   └── settings.py      # Parámetros globales e ID selection
-├── data/
-│   ├── raw/             # Insumos originales (SHP, KML, TXT)
-│   └── output/          # Resultados generados
-├── modules/
-│   ├── ingestion.py     # Limpieza de datos y SHP processing
-│   ├── modeling.py      # Lógica de Monte Carlo e Interpolación
-│   └── visualization.py # Generación de visuales 3D y Contornos
-├── main.py              # Script principal de ejecución
-└── README.md            # Documentación
